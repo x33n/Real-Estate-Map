@@ -1,6 +1,6 @@
-Real estate map can help people to find a dream house with reasonable price and great quality. It can be used to create a profile, auto-calculate the value for real estate and compare value of different real estate. Moreover, the app provides some useful functions such as computing distance between locations and set/go back to home location.
+Real estate map can help people to find a <b>dream house</b> with reasonable price and great quality. It can be used to <b>create</b> a profile, <b>auto-calculate</b> the value for real estate and <b>compare</b> value of different real estate. Moreover, the app provides some useful functions such as <b>computing</b> distance between locations and <b>set/go back</b> to home location.
 
-Frontend technology: google map api + angular + jquery + bootstrap + css less
+<b>Frontend technology: google map api + angular + jquery + bootstrap + css less</b>
 
 1. Make a marker for a house on the map and click to create a profile
 
