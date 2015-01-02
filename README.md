@@ -9,8 +9,8 @@ Real estate map can help people to find a <b>dream house</b> with reasonable pri
 <img src='http://oi60.tinypic.com/23qykqg.jpg'></img>
 
 3. Auto-calculate points according to the house profile and show points breakdown for each dimension.
-<img src='http://oi60.tinypic.com/23qykqg.jpg'></img>
-<img src='http://oi60.tinypic.com/23qykqg.jpg'></img>
+<img src='http://oi59.tinypic.com/11ukzrm.jpg'></img>
+<img src='http://oi60.tinypic.com/iydduc.jpg'></img>
 
 4. Preview the saved profile
 <img src='http://oi58.tinypic.com/28wovva.jpg'></img>
