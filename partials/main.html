@@ -1,0 +1,23 @@
+<div id='toolbar'>
+	<div id='toolbarLeft'>
+		<div id='toolbarLogo'>
+			<img src='img/house.jpg'></img>
+		</div>
+		<div id='toolbarTitle'>
+			<h1>House Map</h1>
+		</div>
+	</div>
+	<div id='buttongroup'>
+		<div class="btn-group btn-group-sm" role="group">
+			<button class='btn btn-default' ng-click='gotoHome($event)'><span class='glyphicon glyphicon-home'></span></button>
+			<button class='btn btn-default' ng-click='setHome($event)'><span class='glyphicon glyphicon-star-empty'></span></button>
+			<button class='btn btn-info' ng-click='scale($event)'><span class='glyphicon glyphicon-resize-full'></span></button>
+			<button class='btn btn-info' ng-click='clearScale($event)'><span class='glyphicon glyphicon-remove-circle'></span></button>
+			<button class='btn btn-success' ng-click='top($event)'><span class='glyphicon glyphicon-stats'></span></button>
+			<button class='btn btn-success' ng-click='clearTop($event)'><span class='glyphicon glyphicon-remove'></span></button>
+			<button class="btn btn-danger" ng-click='deleteMarker($event)'><span class='glyphicon glyphicon-trash'></span></button>
+			<button class="btn btn-default" ng-click='open()'><span class='glyphicon glyphicon-cog'></span></button>
+		</div>
+	</div>
+</div>
+<div id='mapCanvas'></div>

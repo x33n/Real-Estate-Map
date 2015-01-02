@@ -1,0 +1,298 @@
+<div id='container'>
+	<div id='topWrapper'>
+		<div id="header">
+			<div id="headerLeft">
+				<div id='logo'>
+					<img src="img/house.jpg"></img>
+				</div>
+				<div id='headerText'>
+					<h4>House Profile</h4>
+				</div>
+			</div>
+			<div id='headerRight'>
+				<div id='buttonGroup'>
+					<div class='btn-toolbar'>
+						<button class='btn btn-danger' ng-click='close($event)'>Close</button>
+						<button class='btn btn-info' ng-click='bEdit=!bEdit'>Edit</button>
+						<button class='btn btn-success' ng-click='saveHouseInfo($event)'>Save</button>
+						<a class='btn btn-warning' href='#/houseindex/{{houseId}}' target='_blank'>Index</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='contentWrapper'>
+		<div id='contentLeft'>
+			<div id='leftPanel'>
+				<form class="form-horizontal" role="form">
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Alias:</label>
+						</div>
+						<div class='col-sm-9'>
+							<input id='alias' value={{house.alias}} class='form-control input-sm' placeholder='Name alias' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>City:</label>
+						</div>
+						<div class='col-sm-9'>
+							<input id='state' value={{house.state}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Area:</label>
+						</div>
+						<div class='col-sm-5'>
+							<input id='area' value={{house.area}} class='form-control input-sm' placeholder='For example, north east' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>Chinese</label>
+						</div>
+						<div class='col-sm-2'>
+							<input id='chinese' value={{house.chinese}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Street:</label>
+						</div>
+						<div class='col-sm-9'>
+							<input id='street' value={{house.street}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Price:</label>
+						</div>
+						<div class='col-sm-4'>
+							<input id='price' value={{house.price}} class='form-control input-sm' placeholder='Initial price' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-5'>
+							<input id='avg_price' value={{house.avg_price}} class='form-control input-sm' placeholder='Average price' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Sold Price:</label>
+						</div>
+						<div class='col-sm-4'>
+							<input id='saleprice' value={{house.saleprice}} class='form-control input-sm' placeholder='Sold price' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-5'>
+							<input id='avg_sale_price' value={{house.avg_sale_price}} class='form-control input-sm' placeholder='Average price' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Floor plan:</label>
+						</div>
+						<div class='col-sm-9'>
+							<input id='floorplan' value={{house.floorplan}} class='form-control input-sm' placeholder='For example, 3 bedrooms 2 bathrooms' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Age:</label>
+						</div>
+						<div class='col-sm-4'>
+							<input id='age' value={{house.age}} class='form-control input-sm' placeholder='Age of the house' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Square M:</label>
+						</div>
+						<div class='col-sm-4'>
+							<input id='squaremetre' value={{house.squaremetre}} class='form-control input-sm' placeholder='Square metre' ng-disabled='bEdit'>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id='contentRight'>
+			<div id='rightPanel'>
+				<form class="form-horizontal" role="form">
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>School 1:</label>
+						</div>
+						<div class='col-sm-5'>
+							<input id='school1' value={{house.school1}} class='form-control input-sm' placeholder='School name' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-2'>
+							<input id='school1_rank' value={{house.school1_rank}} class='form-control input-sm' placeholder='Rank' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-2'>
+							<input id='school1_distance' value={{house.school1_distance}} class='form-control input-sm' placeholder='Distance' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>School 2:</label>
+						</div>
+						<div class='col-sm-5'>
+							<input id='school2' value={{house.school2}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-2'>
+							<input id='school2_rank' value={{house.school2_rank}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-2'>
+							<input id='school2_distance' value={{house.school2_distance}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Station 1:</label>
+						</div>
+						<div class='col-sm-5'>
+							<input id='station1' value={{house.station1}} class='form-control input-sm' placeholder='Station name' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-2'>
+							<input id='station1_distance' value={{house.station1_distance}} class='form-control input-sm' placeholder='Distance' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Station 2:</label>
+						</div>
+						<div class='col-sm-5'>
+							<input id='station2' value={{house.station2}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+						<div class='col-sm-2'>
+							<input id='station2_distance' value={{house.station2_distance}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>CBD:</label>
+						</div>
+						<div class='col-sm-3'>
+							<input id='cbd' value={{house.cbd}} class='form-control input-sm' placeholder='Distance' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Created Date:</label>
+						</div>
+						<div class='col-sm-3'>
+							<input id='created_date' value={{house.created_date}} class='form-control input-sm' ng-disabled=true>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Updated Date:</label>
+						</div>
+						<div class='col-sm-3'>
+							<input id='updated_date' value={{house.updated_date}} class='form-control input-sm' ng-disabled=true>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id='contentBottomWrapper'>
+		<div id='contentLeftBottom'>
+			<div id='leftBottomPanel'>
+				<form class="form-horizontal" role="form">
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Area $:</label>
+						</div>
+						<div class='col-sm-6'>
+							<input id='area_price' value={{house.area_price}} class='form-control input-sm' placeholder='Average price for the area' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Street $:</label>
+						</div>
+						<div class='col-sm-6'>
+							<input id='street_price' value={{house.street_price}} class='form-control input-sm' placeholder='Average price for the street' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>YtoY Rate:</label>
+						</div>
+						<div class='col-sm-6'>
+							<input id='ytoy_rate' value={{house.ytoy_rate}} class='form-control input-sm' placeholder='Year to year increase rate' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>QtoQ Rate:</label>
+						</div>
+						<div class='col-sm-6'>
+							<input id='qtoq_rate' value={{house.qtoq_rate}} class='form-control input-sm' placeholder='Quarter to quarter increase rate' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>MtoM Rate:</label>
+						</div>
+						<div class='col-sm-6'>
+							<input id='mtom_rate' value={{house.mtom_rate}} class='form-control input-sm' placeholder='Month to month increase rate' ng-disabled='bEdit'>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id='contentRightBottom'>
+			<div id='rightBottomPanel'>
+				<form class="form-horizontal" role="form">
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Highway:</label>
+						</div>
+						<div class='col-sm-8'>
+							<input id='highway' value={{house.highway}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Supermarket:</label>
+						</div>
+						<div class='col-sm-8'>
+							<input id='supermarket' value={{house.supermarket}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Shopping:</label>
+						</div>
+						<div class='col-sm-8'>
+							<input id='shoppingcenter' value={{house.shoppingcenter}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Hospital:</label>
+						</div>
+						<div class='col-sm-8'>
+							<input id='hospital' value={{house.hospital}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Police:</label>
+						</div>
+						<div class='col-sm-8'>
+							<input id='police' value={{house.police}} class='form-control input-sm' ng-disabled='bEdit'>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-3'>
+							<label class='control-label'>Pollution:</label>
+						</div>
+						<div class='col-sm-8'>
+							<input id='pollution' value={{house.pollution}} class='form-control input-sm' placeholder='Water plant / Garbage station' ng-disabled='bEdit'>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

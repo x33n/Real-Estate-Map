@@ -1,0 +1,558 @@
+<div id='containerIndex'>
+	<div id='topWrapperIndex'>
+		<div id="headerIndex">
+			<div id="headerLeftIndex">
+				<div id='logoIndex'>
+					<img src="img/house.jpg"></img>
+				</div>
+				<div id='headerTextIndex'>
+					<h4>Points Breakdown</h4>
+				</div>
+			</div>
+			<div id='headerRightIndex'>
+				<div id='buttonGroupIndex'>
+					<div class='btn-toolbar'>
+						<button class='btn btn-danger' ng-click='close($event)'>Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='contentWrapperIndex'>
+		<div id='contentLeftIndex'>
+			<div id='leftPanelIndex'>
+				<form class="form-horizontal" role="form">
+					<div class='form-group'>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Floorplan:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.floorplan}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Age:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.age}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Square Meter:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.squaremetre}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>CBD Dist:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.cbd}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Station Dist:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.station1_distance}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>School Rank:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.school1_rank}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+						<div class='col-sm-6'>
+							<label class='control-label'></label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Chinese:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.chinese}}</p>
+						</div>
+					</div>
+					<div class='empty-block'>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Highway:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.highway}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>SuperMarket:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.supermarket}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Shopping:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.shoppingcenter}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Hospital:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.hospital}}</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-7'>
+							<label class='control-label'>Pollution:</label>
+						</div>
+						<div class='col-sm-4'>
+							<p class='data'>{{houseProfile.pollution}}</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id='contentRightIndex'>
+			<div id='rightPanelIndex'>
+				<form class="form-horizontal" role="form">
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<label class='control-label'>1 bedroom</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>2 bedrooms</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>3 bedrooms</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>4 bedrooms</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>5 bedrooms</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'> > 5 bedrooms</label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.floor_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.floor_index}}'>1</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-2-{{houseIndex.floor_index}}'>2</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-3-{{houseIndex.floor_index}}'>3</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-4-{{houseIndex.floor_index}}'>4</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-5-{{houseIndex.floor_index}}'>5</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<label class='control-label'> > 25 y</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>20 - 25 y</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>15 - 20 y</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>10 - 15 y</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>5 - 10 y</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'> < 5 y</label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.age_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.age_index}}'>1</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-2-{{houseIndex.age_index}}'>2</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-3-{{houseIndex.age_index}}'>3</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-4-{{houseIndex.age_index}}'>4</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-5-{{houseIndex.age_index}}'>5</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<label class='control-label'> < 400 m2</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>400 - 500 m2</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>500 - 600 m2</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>600 - 700 m2</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>700 - 800 m2</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'> > 800 m2</label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.square_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.square_index}}'>1</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-2-{{houseIndex.square_index}}'>2</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-3-{{houseIndex.square_index}}'>3</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-4-{{houseIndex.square_index}}'>4</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-5-{{houseIndex.square_index}}'>5</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<label class='control-label'> > 40 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>30 - 40 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>25 - 30 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>20 - 25 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>10 - 20 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'> < 10 km</label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.cbd_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.cbd_index}}'>1</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-2-{{houseIndex.cbd_index}}'>2</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-3-{{houseIndex.cbd_index}}'>3</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-4-{{houseIndex.cbd_index}}'>4</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-5-{{houseIndex.cbd_index}}'>5</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<label class='control-label'> > 3 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>2.5 - 3 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>2 - 2.5 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>1.5 - 2 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>1 - 1.5 km</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'> < 1 km</label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.station_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.station_index}}'>1</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-2-{{houseIndex.station_index}}'>2</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-3-{{houseIndex.station_index}}'>3</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-4-{{houseIndex.station_index}}'>4</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-5-{{houseIndex.station_index}}'>5</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<label class='control-label'> > rank 25 </label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>rank 20 - 25</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>rank 15 - 20</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>rank 10 - 15</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>rank 5 - 10</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'> < rank 5</label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.school_rank_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.school_rank_index}}'>1</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-2-{{houseIndex.school_rank_index}}'>2</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-3-{{houseIndex.school_rank_index}}'>3</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-4-{{houseIndex.school_rank_index}}'>4</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-5-{{houseIndex.school_rank_index}}'>5</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<label class='control-label'>Not CH area</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>CH area</label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.chinese_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.chinese_index}}'>1</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<label class='control-label'>Has it</label>
+						</div>
+						<div class='col-sm-2'>
+							<label class='control-label'>Does not</label>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.highway_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.highway_index}}'>1</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.super_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.super_index}}'>1</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.shopping_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.shopping_index}}'>1</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.hospital_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.hospital_index}}'>1</p>
+						</div>
+					</div>
+					<div class='form-group'>
+						<div class='col-sm-2'>
+							<p class='index-0-{{houseIndex.pollution_index}}'>0</p>
+						</div>
+						<div class='col-sm-2'>
+							<p class='index-1-{{houseIndex.pollution_index}}'>1</p>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id='contentBottomIndex'>
+			<form class="form-horizontal" role="form">
+				<div class='form-group'>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'>Total points:</label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='dataTotal'>{{houseIndex.total_index}}/36</label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+				</div>
+				<div class='form-group'>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'>Percentage Points:</label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='dataTotal'>{{houseIndex.total_percentage}}</label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+				</div>
+				<div class='form-group'>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'>Price Per Point:</label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='dataTotal'>{{houseIndex.price_per_point}}</label>
+					</div>
+					
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+					<div class='col-sm-2'>
+						<label class='control-label'></label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

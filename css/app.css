@@ -1,0 +1,260 @@
+@import 'bootstrap.css';
+#toolbar {
+  width: 100%;
+  height: 36px;
+  padding-top: 3px;
+  margin-top: 0px;
+  background-color: #6d6d6d;
+}
+#toolbar #toolbarLeft {
+  float: left;
+  width: 77%;
+  height: 30px;
+  margin-top: 0px;
+  padding-right: 330px;
+}
+#toolbar #toolbarLeft #toolbarLogo {
+  float: left;
+  padding-left: 30px;
+}
+#toolbar #toolbarLeft #toolbarLogo img {
+  height: 30px;
+  width: 35px;
+  border-radius: 3px;
+}
+#toolbar #toolbarLeft #toolbarTitle {
+  float: right;
+}
+#toolbar #toolbarLeft #toolbarTitle h1 {
+  margin-top: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+#toolbar #buttongroup {
+  float: right;
+  width: 23%;
+}
+#mapCanvas {
+  height: 800px;
+  /*width: 100%;*/
+  margin: 10px,10px;
+  padding: 0;
+  /*border-radius: 5px;*/
+}
+html {
+  /*background-color: @global-content;*/
+  font: normal 18px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+#infoWindow {
+  /*background-color: #f8b753;*/
+  width: 200px;
+  height: 160px;
+  border: 6px solid #5bc0de;
+  border-radius: 9px 9px;
+}
+#infoWindow #infoLogo {
+  padding-left: 40px;
+  padding-top: 5px;
+}
+#infoWindow #infoLogo img {
+  width: 110px;
+  height: 90px;
+}
+#infoWindow #infoLink {
+  padding-top: 15px;
+  padding-left: 9px;
+  text-decoration: underline;
+  /*font-weight: bold;*/
+}
+#infoWindow #infoLink :hover {
+  color: red;
+}
+#overview {
+  background-color: #f1efe9;
+  /*background-color: white;*/
+  width: 200px;
+  height: 307px;
+  border: 6px solid #5bc0de;
+  border-radius: 9px 9px;
+  /*padding:0px 0px;*/
+  /*padding:5px 0px;*/
+}
+#overview #index {
+  background-color: #f1efe9;
+  height: 68px;
+  /*margin-top: 5px;*/
+  padding-bottom: 3px;
+}
+#overview #index h1 {
+  margin-top: 2px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 60px;
+  color: #5cb85c;
+  font-weight: bold;
+  /*margin: 0px 0px;*/
+}
+#overview #detail {
+  /*margin: 0px 5px;*/
+  /*border-top: 1px dotted white;*/
+  background-color: #df524a;
+  padding: 3px 0px;
+}
+#overview #detail p {
+  margin: 5px 25px;
+  /*font-weight: bold;*/
+  color: white;
+  /*color: @global-background;*/
+}
+#overview #infoLink {
+  /*margin: 0px 0px;*/
+  background-color: #f9fb30;
+  /*border-top: 1px dotted white;*/
+  padding-top: 5px;
+  padding-left: 40px;
+  height: 30px;
+  /*font-weight: bold;*/
+}
+#overview #infoLink a {
+  text-decoration: underline;
+  /*text-align: center;*/
+}
+#overview #infoLink :hover {
+  color: red;
+}
+#topPanel {
+  width: 116px;
+  height: 80px;
+  /*background-color: #df524a;*/
+  /*border: 5px solid #df524a;*/
+  border-radius: 3px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+#topPanel #topLink {
+  padding-left: 45px;
+}
+#topPanel #topLink a {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  /*text-decoration: underline;*/
+}
+#topPanel #topLink :hover {
+  color: blue;
+}
+#topPanel p {
+  color: white;
+  margin: 1px 10px;
+}
+#container {
+  /*.global-width;*/
+  background-color: #5bc0de;
+  padding-bottom: 20px;
+}
+#container #topWrapper #header {
+  /*width: 1920px;	*/
+  height: 90px;
+  background-color: #6d6d6d;
+}
+#container #topWrapper #header #headerLeft {
+  width: 55%;
+  height: 90px;
+  float: left;
+  background-color: #6d6d6d;
+}
+#container #topWrapper #header #headerLeft #logo {
+  float: left;
+  margin: 10px 30px;
+}
+#container #topWrapper #header #headerLeft #logo img {
+  border-radius: 5px;
+  width: 80px;
+  height: 70px;
+}
+#container #topWrapper #header #headerLeft #headerText {
+  margin: 20px 20px;
+  float: right;
+}
+#container #topWrapper #header #headerLeft #headerText h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+#container #topWrapper #header #headerRight {
+  /*width: 600px;*/
+  float: right;
+  height: 90px;
+  background-color: #6d6d6d;
+}
+#container #topWrapper #header #headerRight #buttonGroup {
+  margin: 30px 50px;
+  float: right;
+}
+#container #contentWrapper {
+  width: 90%;
+  background-color: white;
+  height: 475px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px 8px 0px 0px;
+}
+#container #contentWrapper #contentLeft {
+  float: left;
+  width: 45%;
+}
+#container #contentWrapper #contentLeft #leftPanel {
+  margin: 15px 25px;
+  /*border-top: 1px solid #ccc;*/
+  padding-top: 30px;
+}
+#container #contentWrapper #contentLeft #leftPanel label {
+  font-size: 16px;
+}
+#container #contentWrapper #contentRight {
+  float: right;
+  width: 55%;
+}
+#container #contentWrapper #contentRight #rightPanel {
+  margin: 15px 25px;
+  /*border-top: 1px solid #ccc;*/
+  padding-top: 30px;
+}
+#container #contentWrapper #contentRight #rightPanel label {
+  font-size: 16px;
+}
+#container #contentBottomWrapper {
+  width: 90%;
+  background-color: white;
+  height: 350px;
+  /*margin-top: 10px;*/
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 0px 0px 8px 8px;
+}
+#container #contentBottomWrapper #contentLeftBottom {
+  float: left;
+  width: 45%;
+}
+#container #contentBottomWrapper #contentLeftBottom #leftBottomPanel {
+  margin: 5px 25px;
+  border-top: 1px solid #ccc;
+  padding-top: 40px;
+}
+#container #contentBottomWrapper #contentLeftBottom #leftBottomPanel label {
+  font-size: 16px;
+}
+#container #contentBottomWrapper #contentRightBottom {
+  float: right;
+  width: 55%;
+}
+#container #contentBottomWrapper #contentRightBottom #rightBottomPanel {
+  margin: 5px 25px;
+  border-top: 1px solid #ccc;
+  padding-top: 40px;
+}
+#container #contentBottomWrapper #contentRightBottom #rightBottomPanel label {
+  font-size: 16px;
+}

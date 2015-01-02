@@ -1,0 +1,272 @@
+@import 'bootstrap.css';
+html {
+  /*background-color: @global-content;*/
+  font: normal 18px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+label {
+  color: #6d6d6d;
+}
+p {
+  color: #ccc;
+}
+.empty-block {
+  height: 45px;
+}
+.dataTotal {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  color: red;
+}
+.data {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #5cb85c;
+}
+.index-0-0 {
+  margin-left: 20px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 3.5px;
+  font-size: 20px;
+}
+.index-0-1 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-0-2 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-0-3 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-0-4 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-0-5 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-1-0 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-1-1 {
+  margin-left: 20px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 3.5px;
+  font-size: 20px;
+}
+.index-1-2 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-1-3 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-1-4 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-1-5 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-2-0 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-2-1 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-2-2 {
+  margin-left: 20px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 3.5px;
+  font-size: 20px;
+}
+.index-2-3 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-2-4 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-2-5 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-3-0 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-3-1 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-3-2 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-3-3 {
+  margin-left: 20px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 3.5px;
+  font-size: 20px;
+}
+.index-3-4 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-3-5 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-4-0 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-4-1 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-4-2 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-4-3 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-4-4 {
+  margin-left: 20px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 3.5px;
+  font-size: 20px;
+}
+.index-4-5 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-5-0 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-5-1 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-5-2 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-5-3 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-5-4 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.index-5-5 {
+  margin-left: 20px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 3.5px;
+  font-size: 20px;
+}
+#containerIndex {
+  /*.global-width;*/
+  background-color: #5bc0de;
+  padding-bottom: 20px;
+}
+#containerIndex #topWrapperIndex #headerIndex {
+  /*width: 1920px;	*/
+  height: 90px;
+  background-color: #6d6d6d;
+}
+#containerIndex #topWrapperIndex #headerIndex #headerLeftIndex {
+  width: 55%;
+  height: 90px;
+  float: left;
+  background-color: #6d6d6d;
+}
+#containerIndex #topWrapperIndex #headerIndex #headerLeftIndex #logoIndex {
+  float: left;
+  margin: 10px 30px;
+}
+#containerIndex #topWrapperIndex #headerIndex #headerLeftIndex #logoIndex img {
+  border-radius: 5px;
+  width: 80px;
+  height: 70px;
+}
+#containerIndex #topWrapperIndex #headerIndex #headerLeftIndex #headerTextIndex {
+  margin: 20px 20px;
+  float: right;
+}
+#containerIndex #topWrapperIndex #headerIndex #headerLeftIndex #headerTextIndex h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+#containerIndex #topWrapperIndex #headerIndex #headerRightIndex {
+  /*width: 600px;*/
+  float: right;
+  height: 90px;
+  background-color: #6d6d6d;
+}
+#containerIndex #topWrapperIndex #headerIndex #headerRightIndex #buttonGroupIndex {
+  margin: 30px 50px;
+  float: right;
+}
+#containerIndex #contentWrapperIndex {
+  width: 90%;
+  background-color: white;
+  height: 1200px;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 8px 8px 8px 8px;
+}
+#containerIndex #contentWrapperIndex #contentLeftIndex {
+  float: left;
+  width: 25%;
+}
+#containerIndex #contentWrapperIndex #contentLeftIndex #leftPanelIndex {
+  margin: 15px 25px;
+  /*border-top: 1px solid #ccc;*/
+  padding-top: 30px;
+}
+#containerIndex #contentWrapperIndex #contentLeftIndex #leftPanelIndex label {
+  font-size: 16px;
+}
+#containerIndex #contentWrapperIndex #contentRightIndex {
+  float: right;
+  width: 75%;
+}
+#containerIndex #contentWrapperIndex #contentRightIndex #rightPanelIndex {
+  margin: 15px 25px;
+  /*border-top: 1px solid #ccc;*/
+  padding-top: 30px;
+}
+#containerIndex #contentWrapperIndex #contentRightIndex #rightPanelIndex label {
+  font-size: 16px;
+}
+#containerIndex #contentWrapperIndex #contentBottomIndex {
+  margin: 20px 50px;
+  padding: 20px 0px;
+  float: left;
+  width: 90%;
+  height: 200px;
+  border-top: 1px solid #ccc;
+}
